@@ -1,0 +1,59 @@
+<!-- Video screen html -->
+<head> 
+		Machu-Picchu
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	{{>vid}}
+	{{>play}} 
+	{{>chapters}}
+	<!--{{>menu}}-->
+</body>
+<template name="vid">
+        <video id="video" poster="./assets/Machu-Picchu.jpg" class="video-js" width="736" height="414" webkit-playsinline>
+            <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type='video/mp4' />
+				</video>
+</template>
+
+
+<template name="play">
+		<img class="playarrow" src="http://www.free-icons-download.net/images/video-play-button-icon-76432.png" id="play-arrow">	
+</template>
+
+<template name = "chapters">
+		<img class="chapter" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" id="chapter"> 
+
+		<div class="skipTo" id="skipTo"> Skip To
+		</div>
+
+		<img class="downArrow" id="downArrow" src="http://www.clipartbest.com/cliparts/xig/K5G/xigK5GzRT.png">
+		<ul class="selection" id="selection">
+		</ul>
+</template>
+<!--
+<template name="menu">
+			<ul class="selection" id="selection">
+				<li id="0"> Chapter 1 </li>
+				<li id="1"> Chapter 2 </li>
+				<li id="2"> Chapter 3 </li>	
+				<li id="3"> Chapter 4 </li>	
+				<li id="4"> Chapter 5 </li>	
+				<li id="5"> Chapter 6 </li>	
+				<li id="6"> Chapter 7 </li>	
+				<li id="7"> Chapter 8 </li>		
+				<li id="8"> Chapter 9 </li>	
+				<li id="9"> Chapter 10 </li>	
+				<li id="10"> Chapter 11 </li>	
+				<li id="11"> Chapter 12 </li>	
+				<li id="12"> Chapter 13 </li>	
+				<li id="13"> Chapter 14 </li>	
+				<li id="14"> Chapter 15 </li>	
+				<li id="15"> Chapter 16 </li>	
+				<li id="16"> Chapter 17 </li>	
+				<li id="17"> Chapter 18 </li>	
+				<li id="18"> Chapter 19 </li>	
+		</ul>
+</template>-->

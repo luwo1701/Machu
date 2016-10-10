@@ -1,0 +1,13 @@
+{
+  "name": "Machu-Picchu",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0"
+  },
+  "devDependencies": {
+    "video.js": "^5.10.8"
+  }
+}

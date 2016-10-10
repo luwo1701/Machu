@@ -1,0 +1,167 @@
+/*
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}*/
+body{
+/*	min-height:100%
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+  background-position: left top;*/
+	overflow:hidden;
+	cursor:pointer;
+	position:fixed;	
+	padding:0;
+	margin:0;
+	border:0;
+}
+video{
+	background-image: url("http://www.travelandleisure.com/sites/default/files/styles/1600x1000/public/1434385487/ATTRACTIONS0615-machu-picchu.jpg?itok=H-P-lyy8");
+	background-size:cover;
+	height:736px;
+	width:414px;
+	padding:0;
+	border:0;
+	margin:0;
+	bottom:0;
+	left:0;		
+}
+img.chapter{
+	height:50px;
+	width:50px;
+	position:absolute;
+	left:20px;
+	top:20px;
+}
+img.playarrow{ 
+	cursor:pointer;
+	height:100px;
+	width:100px;
+	position:absolute;
+	left:40%;
+	top:40%;
+/*keeps people from selecting the play button as text*/
+	-webkit-user-select:none;
+}
+img.playarrow .enlarged{
+	height:150px;
+	width:150px;
+
+}
+.skipTo{
+	color:#E4C59F;
+	font-size:30px;
+	display:inline-block;
+	position:absolute;
+	top:27px;
+	left:70px;
+}
+.selection{
+	background-color:#E4C59F;
+	max-height: 100px;
+	overflow:scroll;
+	color:black;
+	display:inline-block;
+	padding:10px 10px 0px 10px;
+	position:absolute;
+	top:50px;
+	left:23px;
+}
+img.downArrow{
+	cursor:pointer;
+	position:absolute;
+	background-color:#E4C59F;
+	top:0px;
+	left:0px;
+	height:auto;
+	width:auto;
+	src:"http://www.clipartbest.com/cliparts/xig/K5G/xigK5GzRT.png";
+}
+
+.selected{
+	background-color:#E4C59F;
+	color:blue;
+	display:inline-block;
+	padding:10px 10px 40px 10px;
+	position:absolute;
+	top:50px;
+	left:23px;
+}
+
+.selected li{
+  opacity:1;
+  list-style-type:none;
+  margin: 0 0 10px 0;
+  font-family: Helvetica, Sans-Serif;
+  color:black;
+  font-size:18px;
+}
+
+.selection li{
+	opacity:1;
+	list-style-type:none;
+	margin: 0 0 10px 0;
+	font-family: Helvetica, Sans-Serif;
+	color:black;
+	font-size:18px;
+
+}
+
+.selection .click{
+	padding:0 0 40px 0;
+	color:blue;
+}
+.side-bar{
+	position:absolute;
+	width:100px;
+	height:100px;
+	color:black;
+}
+video::-webkit-media-controls-start-playback-button{
+	display:none !important;
+}
+.circle {
+	position:relative;
+	top:-120px;
+	left:-120px;
+	width: 120px;
+	height: 120px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+/* width and height can be anything, as long as they're equal */
+}
+.arrow-right.clicked{
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent; 
+	border-left: 120px solid white;
+	cursor:pointer;
+}
+.bookmark{
+	position:absolute;
+	bottom:0px;
+	left:-100px;
+	right:0px;
+	top:60px;
+	padding:10px;
+	color:white;
+	width:120px;
+	float:left;
+	font-size:25px;
+	height:25px;
+	width:100px;
+	color:#E4C59F;
+	font-family: Helvetica, Sans-Serif;
+}
+.bookmarkimg{
+	position:absolute;
+	bottom:25px;
+	left:-30px;	
+	width:25px;
+	height:25px;
+}
+
